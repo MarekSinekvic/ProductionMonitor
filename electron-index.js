@@ -175,8 +175,11 @@ const createMainWindow = () => {
     sendLog(process.env.NODE_ENV);
     // mainWin.loadURL("http://localhost:3000");
     //mainWin.loadFile(path.join(__dirname,"build/index.html"))
-    !app.isPackaged ? mainWin.loadURL("http://localhost:3000") : mainWin.loadFile(path.join(__dirname,"build/index.html"));
-    mainWin.webContents.openDevTools();
+    if (!app.isPackaged) {
+        mainWin.loadURL("http://localhost:3000");
+        mainWin.webContents.openDevTools();
+    } else mainWin.loadFile(path.join(__dirname,"build/index.html"));
+
     return mainWin;
 }
 const createLoadingWindow = () => {

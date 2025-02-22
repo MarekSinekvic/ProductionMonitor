@@ -24,7 +24,10 @@
     "eject": "react-scripts eject",
     "electron-dev": "electron .",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+
+    "dev": "npm run react-start && npm run electron-dev",
+    "compile": "npm run build && npm run make"
   },
   "main": "electron-index.js",
   "homepage": ".",
