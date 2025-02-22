@@ -8,3 +8,6 @@ But you can download builded version in production<br/><br/>
 <img src="/images/2.png" style="width: 30%"/>
 <img src="/images/3.png" style="width: 30%"/>
 <img src="/images/4.png" style="width: 30%"/>
+
+Also includes barcode scanner server, writed on scratch PHP
+To run in developer mode you will need php cli and write: "php -S localhost:8000"
