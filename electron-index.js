@@ -75,7 +75,8 @@ function checkOptions() {
 }
 checkOptions();
 
-async function CheckUpdates() {
+/*
+    async function CheckUpdates() {
     // let zipFile = '';
     let chunksStep = 0;
     return;
@@ -128,7 +129,8 @@ async function CheckUpdates() {
         });
     });
 }
-CheckUpdates();
+*/
+//CheckUpdates();
 // require('update-electron-app')({
 //     updateSource: {
 //         type: UpdateSourceType.StaticStorage,
